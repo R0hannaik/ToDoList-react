@@ -7,7 +7,7 @@ import EditTask from './edit-component/EditTask';
 class Todo extends Component {
     constructor(props) {
         super(props)
-    
+
         this.state = {
             task : [],
             update: ''
@@ -23,6 +23,7 @@ class Todo extends Component {
     };
 
     taskListCallBack = (event) =>{
+
         let newTask = this.state.task;
         let name = event.name.split('-')[0];
         let id = event.name.split('-')[1];
@@ -60,7 +61,7 @@ class Todo extends Component {
         })
         this.setState({task: editTask, update: ''})
     }
-    
+
     render() {
         return (
             <div>
