@@ -1,0 +1,75 @@
+.todoInput {
+    margin-top: 150px ;
+    margin-bottom: 75px ;
+}
+
+.todoInput {
+    input[type='text']{
+        width: 314px;
+        height: 34px;
+        left: 274px;
+        top: 228px;
+        margin: 0px 30px 0px 360px;
+        border: none;
+        border-bottom: 2px solid #FCBF1E;
+        background-color: #120136;
+        color: white;
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+
+.todoInput {
+    input[type='text']::-webkit-input-placeholder{
+        font-size: 24px;
+        line-height: 30px;
+        color: white;
+    }
+}
+
+.react-datetime-picker__wrapper{
+    width: 354px;
+    height: 38px;
+    left: 640px;
+    top: 234px;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    color: #FCBF1E;
+    border: 1px solid #F4F4F4;
+}
+
+.react-datetime-picker__inputGroup__input {
+    min-width: 0.54em;
+    color: #FCBF1E;
+    height: calc(100% - 2px);
+    position: relative;
+    padding: 1px;
+    border: 0;
+    background: none;
+    font: inherit;
+    box-sizing: content-box;
+    -moz-appearance: textfield;
+    line-height: 30px;
+}
+
+.react-datetime-picker__button {
+    border: 0;
+    padding: 4px 6px;
+    background: white;
+}
+
+.todoInput{
+    button[name='save']{
+        margin: 0px 0px 0px 30px;
+        width: 117px;
+        height: 56px;
+        left: 1019px;
+        top: 225px;
+        background: #035AA6;
+        border: 5px solid #035AA6;
+        color: #F4F4F4;
+        font-size: 24px;
+        line-height: 30px;
+    }
+}

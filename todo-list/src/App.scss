@@ -1,0 +1,10 @@
+$primary-color: #120136;
+$common-font: Quicksand, sans-serif;
+$common-fontStyle-fontWidth: normal;
+
+body {
+    background-color: $primary-color;
+    font-family: $common-font;
+    font-style: $common-fontStyle-fontWidth;
+    font-weight: $common-fontStyle-fontWidth;
+}

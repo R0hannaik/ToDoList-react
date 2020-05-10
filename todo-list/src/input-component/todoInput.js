@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import DatePicker from '../common/DatePicker';
+import './todoInput.scss'
 import { v4 as uuidv4 } from 'uuid';
 
 class TodoInput extends Component {
@@ -30,10 +31,10 @@ class TodoInput extends Component {
 
     render() {
         return (
-            <div>
-                <input type='text' value={this.state.task} onChange={this.handleInputChange}/>
+            <div className='todoInput'>
+                <input type='text' placeholder='Type your task here' value={this.state.task} onChange={this.handleInputChange}/>
                 <DatePicker getDateChangeCallback={this.getDateChangeCallback} value={this.state.date}/>
-                <button onClick={this.handleClick}>Save</button>      
+                <button name='save' onClick={this.handleClick}>Save</button>      
             </div>
         )
     }
