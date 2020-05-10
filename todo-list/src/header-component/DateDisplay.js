@@ -21,42 +21,39 @@ function DateDisplay() {
         let d = new Date();
         let presentDate = d.getDate();
         if(presentDate === 1 || presentDate === 21 || presentDate === 31 ){
-            return <> {presentDate}<sup>st</sup></>
+            return <> {presentDate}st</>
         }
         else if(presentDate === 2 || presentDate === 22){
-            return <> {presentDate}<sup>nd</sup></>
+            return <> {presentDate}nd</>
         }
         else if(presentDate === 3 || presentDate === 23){
-            return <> {presentDate}<sup>rd</sup></>
+            return <> {presentDate}rd</>
         }
         else{
-            return <> {presentDate}<sup>th</sup></>
+            return <> {presentDate}th</>
         }
     };
     const displayDateAndDay = () =>{
         return(
-            <div>
+            <>
                 {getDay()},{getDate()} {getMonth()}
-            </div>
+            </>
         )
     };
     const displayMonthAndYear = () =>{
         return(
-            <div>
+            <>
                 {getYear()}
-            </div>
+            </>
         )
     };
 
      return (
-        <>
-            <div>
-                {displayDateAndDay()}
-            </div>
-            <div>
-                {displayMonthAndYear()}
-            </div>
-        </>
+        <div>
+            <h1>
+                {displayDateAndDay()} {displayMonthAndYear()}
+            </h1>
+        </div>
      )
  }
 

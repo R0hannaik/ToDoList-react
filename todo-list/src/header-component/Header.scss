@@ -1,0 +1,45 @@
+$header-color: #FCBF1E;
+$date-color: #F4F4F4;
+$common-height: 47px;
+$common-width: 441px;
+$common-left: 539px;
+$common-top: 14px;
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.header{
+    h1 {
+        color: $header-color;
+        width: $common-width;
+        height: $common-height;
+        left: $common-left;
+        top: $common-top;
+        margin: 20px 20px 20px 120px;
+        font-size: 48px;
+        line-height: 60px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.header{
+    div{
+        h1{
+            color: $date-color;
+            width: $common-width;
+            height: $common-height;
+            left: $common-left;
+            top: $common-top;
+            margin: 20px 20px 20px 10px;
+            font-size: 36px;
+            line-height: 45px;
+            align-items: center;
+            text-align: center;
+        }
+    }
+}
