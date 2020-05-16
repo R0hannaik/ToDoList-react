@@ -21,7 +21,9 @@ function TaskList(props) {
                                     <div className="taskList-Button">
                                         <div>
                                             <button name={`info-${key}`} style={{color:"white"}} className='taskList-button-svg' onClick={(event)=> {hanldeOnClick(event.target)}}>
-                                              &#10069;
+                                                <span>
+                                                    &#10069;
+                                                </span>
                                             </button>
                                         </div>
                                         <div>
@@ -36,7 +38,9 @@ function TaskList(props) {
                                         </div>
                                         <div>
                                             <button className='taskList-button-svg' style={{color:'white', fontSize:'18px'}} onClick={(event)=> {hanldeOnClick(event.target)}} name={`delete-${key}`}>
-                                                &#10007;
+                                                <span>
+                                                    &#10007;
+                                                </span>
                                             </button>
                                         </div>
                                     </div>

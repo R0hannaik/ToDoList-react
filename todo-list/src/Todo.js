@@ -67,8 +67,10 @@ class Todo extends Component {
             <div>
                 <Headers/>
                 <TodoInput getAddTaskCallback={this.getAddTaskCallback} inputForm={this.state.update}/>
-                <TaskList taskListCallBack={this.taskListCallBack} tasks={this.state.task}/>
-                {(this.state.update !== ''? <EditTask editFormCallback={this.editFormCallback} editForm={this.state.update}/> : null)}
+                <div style={{display: 'flex'}}>
+                    <TaskList taskListCallBack={this.taskListCallBack} tasks={this.state.task}/>
+                    {(this.state.update !== ''? <EditTask editFormCallback={this.editFormCallback} editForm={this.state.update}/> : null)}
+                </div>
             </div>
         )
     }

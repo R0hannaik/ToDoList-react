@@ -1,0 +1,28 @@
+.EditTask {
+    padding: 40px;
+    border: solid;
+    color:  white;
+}
+
+.EditTask {
+    input[type='text']{
+        width: 314px;
+        height: 34px;
+        left: 274px;
+        top: 228px;
+        border: none;
+        border-bottom: 2px solid #FCBF1E;
+        background-color: #120136;
+        color: white;
+        font-size: 24px;
+        line-height: 30px;
+        
+        &:focus{
+            outline: none!important;
+        } 
+    }
+}
+
+.EditTask-component {
+    padding: 20px;
+}

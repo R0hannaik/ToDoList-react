@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import DatePicker from '../common/DatePicker';
+import './EditTask.scss'
 
 class EditTask extends Component {
     constructor(props) {
@@ -31,10 +32,23 @@ class EditTask extends Component {
 
     render() {
         return (
-            <div>
-                <input type='text' value={this.state.formData.task} onChange={this.handleInputChange}/>
-                <DatePicker  getDateChangeCallback={this.getDateChangeCallback} value={this.state.formData.date}/>
-                <button onClick={this.handleClick}>Save</button>      
+            <div className="EditTask">
+                <div className="header">
+                    <div>
+                        <h1>
+                            Edit Your Task
+                        </h1>
+                    </div>
+                </div>
+                <div className="EditTask-component">
+                    <input type='text' value={this.state.formData.task} onChange={this.handleInputChange}/>
+                </div>
+                <div className="EditTask-component">
+                    <DatePicker  getDateChangeCallback={this.getDateChangeCallback} value={this.state.formData.date}/>
+                </div>
+                <div className="EditTask-component">
+                    <button name="save" onClick={this.handleClick}>Save</button>      
+                </div>
             </div>
         )
     }
