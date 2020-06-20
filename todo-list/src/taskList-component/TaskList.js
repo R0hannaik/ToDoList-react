@@ -4,7 +4,9 @@ import './TaskList.scss'
 function TaskList(props) {
 
    const hanldeOnClick = event => {
-        event.tagName === 'BUTTON' ? props.taskListCallBack(event) :props.taskListCallBack(event.parentNode)
+       console.log('THis is the event', event.currentTarget)
+       props.taskListCallBack(event.currentTarget)
+        // event.tagName === 'BUTTON' ? props.taskListCallBack(event) :props.taskListCallBack(event.parentNode)
     }
 
     return (
@@ -20,14 +22,14 @@ function TaskList(props) {
                                     </div>
                                     <div className="taskList-Button">
                                         <div>
-                                            <button name={`info-${key}`} style={{color:"white"}} className='taskList-button-svg' onClick={(event)=> {hanldeOnClick(event.target)}}>
+                                            <button name={`info-${key}`} style={{color:"white"}} className='taskList-button-svg' onClick={hanldeOnClick}>
                                                 <span>
                                                     &#10069;
                                                 </span>
                                             </button>
                                         </div>
                                         <div>
-                                            <button onClick={(event)=> {hanldeOnClick(event.target)}} style={{color:"white",textAlign:"center",fontSize:'18px'}}  className='taskList-button-svg' name={`status-${key}`}>
+                                            <button onClick={hanldeOnClick} style={{color:"white",textAlign:"center",fontSize:'18px'}}  className='taskList-button-svg' name={`status-${key}`}>
                                             {
                                                 task.status === true ?
                                                 <span>&#8722;</span>
@@ -37,7 +39,7 @@ function TaskList(props) {
                                             </button>
                                         </div>
                                         <div>
-                                            <button className='taskList-button-svg' style={{color:'white', fontSize:'18px'}} onClick={(event)=> {hanldeOnClick(event.target)}} name={`delete-${key}`}>
+                                            <button className='taskList-button-svg' style={{color:'white', fontSize:'18px'}} onClick={hanldeOnClick} name={`delete-${key}`}>
                                                 <span>
                                                     &#10007;
                                                 </span>
