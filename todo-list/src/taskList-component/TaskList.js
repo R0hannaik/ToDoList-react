@@ -4,7 +4,7 @@ import './TaskList.scss'
 function TaskList(props) {
 
    const hanldeOnClick = event => {
-       console.log('THis is the event', event.currentTarget)
+    //    console.log('THis is the event', event.currentTarget)
        props.taskListCallBack(event.currentTarget)
         // event.tagName === 'BUTTON' ? props.taskListCallBack(event) :props.taskListCallBack(event.parentNode)
     }
